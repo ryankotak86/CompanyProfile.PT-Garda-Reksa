@@ -212,4 +212,11 @@ body {
 .show {
   opacity: 1;
   transform: translateY(0);
+
+}
+@media (max-width: 480px) {
+  .map-container {
+    max-width: 100%;      /* lebar penuh layar HP */
+    padding-bottom: 75%;  /* tinggi sedikit lebih tinggi agar peta nyaman dilihat */
+  }
 }

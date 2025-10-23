@@ -1,0 +1,218 @@
+<!-- Navbar -->
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Garda Reksa Astaguna</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/kontak.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo-box">
+        <img src="img/LOGO.svg" alt="Logo" />
+        <div class="logo-text">
+          <h1>PT. Garda Reksa Astaguna</h1>
+          <span>HR Outsourcing & Security Services</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <ul class="nav-menu">
+        <li><a href="index.html" >Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="nilai.html">Nilai-Nilai</a></li>
+        <li><a href="kontak.html"class="active">Kontak</a></li>
+      </ul>
+      <a href="kontak.html" class="btn-orange">Hubungi Kami</a>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    </nav>
+
+    <section class="contact-section hidden">
+    <p class="subtitle">Tim kami siap membantu Anda menemukan solusi terbaik untuk bisnis Anda</p>
+
+    <div class="contact-container">
+      <!-- Formulir Kirim Pesan -->
+ <div class="contact-form">
+  <h3>Kirim Pesan</h3>
+  <form id="contactForm">
+    <label for="name">Nama</label>
+    <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+    <label for="Perusahaan">Nama Perusahaan</label>
+          <input type="text" name="perusahaan" placeholder="Nama Perusahaan">
+
+    <label for="message">Pesan</label>
+    <textarea id="message" name="message" rows="12" placeholder="Tulis pesan Anda..." required></textarea>
+
+    <button type="submit" class="btn-send">Kirim Pesan</button>
+  </form>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = encodeURIComponent(document.getElementById("name").value);
+  const email = encodeURIComponent(document.getElementById("email").value);
+  const message = encodeURIComponent(document.getElementById("message").value);
+
+  const toEmail = "gardareksaastaguna@gmail.com";
+
+  // Subjek email diambil dari isi pesan
+  const subject = message;
+
+  // Body email berisi data lengkap user
+  const body = `Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`;
+
+  // Buka Gmail Compose dengan data form
+  const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${toEmail}&su=${subject}&body=${encodeURIComponent(body)}`;
+  window.open(gmailURL, "_blank");
+});
+</script>
+          
+
+      <!-- Informasi Kontak -->
+      <div class="contact-info">
+
+  <!-- Card Alamat -->
+  <div class="info-card hidden">
+    <i class='bx bx-map'></i>
+    <div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=Kreo+Creative+Lot+No.23,+JL.+KH+Wahid+Hasyim,+Kreo+Selatan,+Larangan,+Kota+Tangerang&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <h4>Alamat</h4>
+      <p>
+        Kreo Creative Lot No.23, JL. KH Wahid Hasyim,<br>
+        Kel. Kreo Selatan, Kec. Larangan,<br>
+        Kota Tangerang
+      </p>
+    </div>
+  </div>
+
+  <!-- Card Telepon -->
+  <div class="info-card">
+    <i class='bx bx-phone'></i>
+    <div>
+      <h4>Telepon</h4>
+      <p>(021) 3880 2084</p>
+    </div>
+  </div>
+
+  <!-- Card Email -->
+  <div class="info-card">
+    <i class='bx bx-envelope'></i>
+    <div>
+      <h4>Email</h4>
+      <p>gardareksaastaguna@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Card Jam Operasional -->
+  <div class="info-card">
+    <i class='bx bx-time-five'></i>
+    <div>
+      <h4>Jam Operasional</h4>
+      <p>
+        Senin - Jumat: 08:00 - 17:00 WIB<br>
+        Sabtu - Minggu: Tutup
+      </p>
+    </div>
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- Bagian Kontak Person -->
+  <section class="person-section hidden">
+    <h3>Kontak Person</h3>
+    <div class="person-container">
+
+      <div class="person-card">
+        <i class='bx bx-user'></i>
+        <h4>Arif Hidayat</h4>
+        <p><i class='bx bx-phone'></i> 0811-9985-302</p>
+        <p><i class='bx bx-envelope'></i> arihidayat0174@gmail.com</p>
+      </div>
+
+      <div class="person-card">
+        <i class='bx bx-user'></i>
+        <h4>Ari Kuncoro</h4>
+        <p><i class='bx bx-phone'></i> 0813-8143-6944</p>
+        <p><i class='bx bx-envelope'></i> astaguna.ari@gmail.com</p>
+      </div>
+
+      <div class="person-card">
+        <i class='bx bx-user'></i>
+        <h4>Kurniawan Hidayat</h4>
+        <p><i class='bx bx-phone'></i> 0813-1812-4574</p>
+        <p><i class='bx bx-envelope'></i> kuryat22@gmail.com</p>
+      </div>
+
+    </div>
+  </section>
+
+
+    <footer class="footer-recreated">
+  <div class="footer-inner">
+    <div class="footer-col brand">
+      <!-- <div class="brand-badge">GRA</div> -->
+      <h3>PT. Garda Reksa Astaguna</h3>
+      <p class="muted">
+        Perusahaan nasional yang bergerak dalam bidang outsourcing dan manajemen sumber daya manusia.
+      </p>
+    </div>
+
+    <div class="footer-col quick-links">
+      <h4>Tautan Cepat</h4>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#nilai">Nilai-Nilai</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col contact">
+      <h4>Kontak</h4>
+      <address>
+        Kreo Creative Lot No. 23<br>
+        JL. KH Wahid Hasyim<br>
+        Kota Tangerang<br>
+        Telpon: (021) 3880 2084<br>
+        Email: gardareksaastaguna@gmail.com
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 PT. Garda Reksa Astaguna — All Rights Reserved.</p>
+  </div>
+
+  <div class="footer-copyright">
+    <p>Dibuat oleh Tim IT PT. Garda Reksa Astaguna</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

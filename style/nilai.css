@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+.hero-section {
+    background: linear-gradient(90deg, #111a29 0%, #1e2839 100%);
+    color: #fff;
+    padding: 80px 130px;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0px ;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* ===== BAGIAN NILAI ===== */
+.values-section {
+    text-align: center;
+    padding: 60px 80px;
+}
+
+.values-section h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card i {
+    font-size: 36px;
+    color: #f97316;
+    margin-bottom: 15px;
+}
+.card svg {
+    width: 36px;        /* sama dengan font-size */
+    height: 36px;       /* sama dengan font-size */
+    color: #f97316;     /* warna sama */
+    margin-bottom: 15px; /* jarak ke judul */
+}
+
+.card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ===== BAGIAN KOMITMEN ===== */
+.commitment-section {
+    background-color: #d64a00;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.commitment-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.commitment-content p {
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+button.primary {
+    background-color: white;
+    color: #d64a00;
+    font-weight: 600;
+}
+
+button.primary:hover {
+    background-color: #f8f8f8;
+}
+
+button.secondary {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+}
+
+button.secondary:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* ===== BAGIAN STATISTIK ===== */
+.stats-section {
+    background-color: #f8fafc;
+    padding: 60px 80px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: left;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 30px 25px;
+    width: 320px;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.stat-card h2 {
+    color: #f97316;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-card h4 {
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}

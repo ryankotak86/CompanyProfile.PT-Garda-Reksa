@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #333;
+}
+
+/* ===== Bagian Kontak Utama ===== */
+.contact-section {
+  padding: 60px 80px;
+  background-color: #f8fafc;
+}
+
+.subtitle {
+  text-align: center;
+  color: #475569;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Formulir kiri */
+.contact-form {
+  flex: 1 1 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f97316;
+}
+
+.btn-send {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background-color: #ea580c;
+}
+
+/* Informasi kontak kanan */
+
+.contact-info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  gap: 15px;
+}
+
+.info-card i {
+  flex-shrink: 0;
+  font-size: 28px;
+  color: #f97316;
+  background-color: #fff4ed;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.info-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.map-container {
+  width: 160%;
+  height: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  border-radius: 8px;
+}
+
+
+
+/* ===== Bagian Kontak Person ===== */
+.person-section {
+  background-color: #fff;
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.person-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.person-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.person-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 25px 20px;
+  width: 280px;
+  text-align: center;
+}
+
+.person-card i {
+  font-size: 40px;
+  color: #f97316;
+  background-color: #fff4ed;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.person-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.person-card p {
+  font-size: 14px;
+  color: #475569;
+}
+
+.person-card p i {
+  font-size: 14px;
+  color: #f97316;
+  margin-right: 5px;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}

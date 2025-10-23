@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a1a;
+    background-color: #fff;
+}
+
+/* ========== Hero Section ========== */
+.hero-section {
+    background: linear-gradient(90deg, #111a29 0%, #1e2839 100%);
+    color: #fff;
+    padding: 80px 130px;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0px ;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* ========== About Section ========== */
+.about-section {
+  background-color: #fff;
+  padding: 80px 8%;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0c1524;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Gambar */
+.about-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fitur Box */
+.feature-boxes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  flex: 1 1 45%;
+  background-color: #fef7ee;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0c1524;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+/*====== VISI MISI ========*/
+.vision-mission-section {
+    background-color: #fff;
+    padding: 60px 60px;
+}
+
+.vm-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.visi-box, .misi-box {
+    flex: 1 1 48%;
+    border-radius: 16px;
+    padding: 30px;
+    color: #fff;
+}
+
+.visi-box {
+    background: linear-gradient(135deg, #e85c0d, #d64b00);
+}
+
+.misi-box {
+    background: #131b2a;
+}
+
+.vm-container h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.vm-container p, .vm-container li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.misi-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* ========== Workflow Section ========== */
+.workflow-section {
+    text-align: center;
+    padding: 80px 60px;
+    background-color: #fff;
+}
+
+.workflow-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.workflow-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0c1524;
+    margin-bottom: 10px;
+}
+
+.workflow-subtitle {
+    color: #777;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.step-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+}
+
+.step-card span {
+    color: #e85c0d;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.step-card h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.step-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    order: -1; /* gambar di atas teks */
+    margin-bottom: 30px;
+  }
+
+  .image-placeholder {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .feature-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 60px 5%;
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .image-placeholder {
+    height: 250px;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+}
